@@ -1,0 +1,6 @@
+﻿Build started...
+1>------ Build started: Project: PortalApplicationFramework, Configuration: Debug Any CPU ------
+1>C:\Users\AbdurRahman\Downloads\selenium_automation_framework\selenium_automation_framework\selenium_automation_framework\Tests\BillingTests\BillingCustomTest.cs(23,28,23,28): error CS1001: Identifier expected
+1>C:\Users\AbdurRahman\Downloads\selenium_automation_framework\selenium_automation_framework\selenium_automation_framework\Tests\BillingTests\BillingCustomTest.cs(23,28,23,28): error CS1002: ; expected
+1>Done building project "PortalApplicationFramework.csproj" -- FAILED.
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========

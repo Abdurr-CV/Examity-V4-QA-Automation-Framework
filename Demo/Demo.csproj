@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD487742-A4EF-473C-8FD0-76586A9C26C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Demo</RootNamespace>
+    <AssemblyName>Demo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="PageObjects\AccountManagerReportPage\AccountManagerReportPage.cs" />
+    <Compile Include="PageObjects\AdministrationPage\AdministrationPage.cs" />
+    <Compile Include="PageObjects\AuditDetailsPage\AuditDetailsPage.cs" />
+    <Compile Include="PageObjects\BillingPage\BillingCustomPage.cs" />
+    <Compile Include="PageObjects\BillingPage\BillingMonthlyPage.cs" />
+    <Compile Include="PageObjects\BillingSummaryPage\BillingSummaryPage.cs" />
+    <Compile Include="PageObjects\ClientDetailspage\ClientDetailsPage.cs" />
+    <Compile Include="PageObjects\DormantClientReportPage\DormantClientReportPage.cs" />
+    <Compile Include="PageObjects\EnrollmentsPage\EnrollmentsPage.cs" />
+    <Compile Include="PageObjects\EvaluationsPage\EvaluationsIndividualResponsesPage.cs" />
+    <Compile Include="PageObjects\EvaluationsPage\EvaluationsSurveyDetailsPage.cs" />
+    <Compile Include="PageObjects\EvaluationsPage\EvaluationsSurveyGraphPage.cs" />
+    <Compile Include="PageObjects\ExamCountPage\ExamCountMonthlyPage.cs" />
+    <Compile Include="PageObjects\ExamCountPage\ExamCountViewDetailsPages.cs" />
+    <Compile Include="PageObjects\ExamHistoryPage\ExamHistoryPage.cs" />
+    <Compile Include="PageObjects\ExamiGoTimestampPage\ExamiGoTimestampPage.cs" />
+    <Compile Include="PageObjects\ExamSnapshotPage\ExamSnapshotPage.cs" />
+    <Compile Include="PageObjects\ExamStatusCountPage\ExamStatusCountPage.cs" />
+    <Compile Include="PageObjects\ExamSummaryPage\ExamSummaryCustomPage.cs" />
+    <Compile Include="PageObjects\ExamSummaryPage\ExamSummaryMonthlyPage.cs" />
+    <Compile Include="PageObjects\ExamTimestampPage\ExamTimestampPage.cs" />
+    <Compile Include="PageObjects\HourlyExamVolumePage\HourlyExamVolumePage.cs" />
+    <Compile Include="PageObjects\InstructorsPage\InstructorsPage.cs" />
+    <Compile Include="PageObjects\KPIPage\KPIPage.cs" />
+    <Compile Include="PageObjects\LoginPage\LoginPage.cs" />
+    <Compile Include="PageObjects\MonthlyExamCountPage\MonthlyExamCountDeatilsPage.cs" />
+    <Compile Include="PageObjects\MonthlyExamCountPage\MonthlyExamCountGraphPage.cs" />
+    <Compile Include="PageObjects\ProctorShiftsPage\ProctorShiftsCustomShiftSummaryPage.cs" />
+    <Compile Include="PageObjects\ProctorShiftsPage\ProctorShiftsDailyShiftAnalyticsPage.cs" />
+    <Compile Include="PageObjects\ProctorSummaryPage\ProctorSummaryPage.cs" />
+    <Compile Include="PageObjects\ProctorUtilizationReportPage\ProctorUtilizationReportMonthlyPage.cs" />
+    <Compile Include="PageObjects\ProctorUtilizationReportPage\ProctorUtilizationReportPage.cs" />
+    <Compile Include="PageObjects\RandomSelectionPage\ClientsRandomSelectionPage.cs" />
+    <Compile Include="PageObjects\RevenueReportPage\RevenueReportPage.cs" />
+    <Compile Include="PageObjects\RevenueYTDReportPage\RevenueCustomReportPage.cs" />
+    <Compile Include="PageObjects\RevenueYTDReportPage\RevenueYTDGraphPage.cs" />
+    <Compile Include="PageObjects\RevenueYTDReportPage\RevenueYTDReportPage.cs" />
+    <Compile Include="PageObjects\ScheduledExamsPage\ScheduledExamsCustomPage.cs" />
+    <Compile Include="PageObjects\ScheduledExamsPage\ScheduledExamsMonthlyPage.cs" />
+    <Compile Include="PageObjects\ScheduledExamsPage\ScheduledExamsViewDetailsPage.cs" />
+    <Compile Include="PageObjects\StudentsPage\StudentsPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\LoopTestClass\TotalTestClass - Copy.cs" />
+    <Compile Include="Tests\LoopTestClass\TotalTestClass.cs" />
+    <Compile Include="Tests\TestforLoop\AccountManagerReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\AdministrationTest.cs" />
+    <Compile Include="Tests\TestforLoop\AuditDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\BillingCustomTest.cs" />
+    <Compile Include="Tests\TestforLoop\BillingMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\BillingSummaryTest.cs" />
+    <Compile Include="Tests\TestforLoop\ClientDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\DormantClientReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\EnrollmentsTest.cs" />
+    <Compile Include="Tests\TestforLoop\EvaluationsIndividualResponsesTest.cs" />
+    <Compile Include="Tests\TestforLoop\EvaluationsSurveyDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\EvaluationsSurveyGraphTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamCountMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamCountViewDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamHistoryTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamiGoTimestampTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamSnapshotTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamStatusCountTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamSummaryCustomTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamSummaryMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamTimestampTest.cs" />
+    <Compile Include="Tests\TestforLoop\HourlyExamVolumeTest.cs" />
+    <Compile Include="Tests\TestforLoop\InstructorsTest.cs" />
+    <Compile Include="Tests\TestforLoop\KPITest.cs" />
+    <Compile Include="Tests\TestforLoop\MonthlyExamCountDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\MonthlyExamCountGraphTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorShiftsCustomShiftSummaryTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorShiftsDailyShiftAnalyticsTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorSummaryTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorUtilizationReportMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorUtilizationReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\RevenueCustomReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\RevenueReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\RevenueYTDGraphTest.cs" />
+    <Compile Include="Tests\TestforLoop\RevenueYTDReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\ScheduledExamsCustomTest.cs" />
+    <Compile Include="Tests\TestforLoop\ScheduledExamsMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\ScheduledExamsViewDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\StudentsTest.cs" />
+    <Compile Include="Utilities\Base.cs" />
+    <Compile Include="Utilities\BasePage.cs" />
+    <Compile Include="Utilities\ExtentService.cs" />
+    <Compile Include="Utilities\ExtentTestManager.cs" />
+    <Compile Include="Utilities\JsonReader.cs" />
+    <Compile Include="Utilities\ReportsLog.cs" />
+    <Compile Include="Utilities\TestBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="license" />
+    <None Include="packages.config" />
+    <None Include="Utilities\TestDataFiles\AccountManagerReport-testData.json" />
+    <None Include="Utilities\TestDataFiles\Administration-testData.json" />
+    <None Include="Utilities\TestDataFiles\CustomReportsDateSelection.json" />
+    <None Include="Utilities\TestDataFiles\Enrollments-testData.json" />
+    <None Include="Utilities\TestDataFiles\Evaluations-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamCountMonthly-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamCountViewDetails-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamHistory-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamiGoTimestamp-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamSnapshot-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamSummaryCustom-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamSummaryMonthly-testData.json" />
+    <None Include="Utilities\TestDataFiles\HourlyExamVolume-testData.json" />
+    <None Include="Utilities\TestDataFiles\Instructors-testData.json" />
+    <None Include="Utilities\TestDataFiles\LoginCredentials-testData.json" />
+    <None Include="Utilities\TestDataFiles\MonthlyReportsDateSelection.json" />
+    <None Include="Utilities\TestDataFiles\Students-testData.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="extent-config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\HTML Extension\" />
+    <Folder Include="Utilities\Screenshots\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

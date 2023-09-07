@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnit.3.13.3\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.13.3\build\NUnit.props')" />
+  <Import Project="..\packages\NUnit3TestAdapter.4.4.2\build\net462\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.4.4.2\build\net462\NUnit3TestAdapter.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0D217C4-E22C-42E5-B945-2CA03A38F89B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestClassLibrary</RootNamespace>
+    <AssemblyName>TestClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AngleSharp, Version=1.0.4.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>..\packages\AngleSharp.1.0.4\lib\net472\AngleSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.1.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtentReports, Version=3.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExtentReports.3.1.3\lib\ExtentReports.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.4.2.13, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.4.2\lib\netstandard2.0\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Magick.NET-Q8-AnyCPU, Version=7.9.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
+      <HintPath>..\packages\Magick.NET-Q8-AnyCPU.7.9.0\lib\net40\Magick.NET-Q8-AnyCPU.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=3.2.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.3.2.0\lib\net47\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=4.0.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.4.0.0\lib\net47\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.4.0.70, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.4.0\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.4.0.70, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.4.0\lib\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.4.0.70, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.4.0\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.5.0.0\lib\net46\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.MailKit, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.MailKit.5.0.0\lib\netstandard2.0\NLog.MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.13.3.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.13.3\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine, Version=3.9.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.9.0\lib\net45\RazorEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="SeleniumExtras.PageObjects, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.PageObjects.Core.4.3.0\lib\net462\SeleniumExtras.PageObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.5.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.6.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=7.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.7.0.3\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WDSE, Version=0.1.5.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Noksa.WebDriver.ScreenshotsExtensions.0.1.5.4\lib\net46\WDSE.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.4.9.0\lib\net47\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.4.9.0\lib\net47\WebDriver.Support.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriverManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebDriverManager.2.17.1\lib\net462\WebDriverManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PageObjects\AccountManagerReportPage\AccountManagerReportPage.cs" />
+    <Compile Include="PageObjects\AdministrationPage\AdministrationPage.cs" />
+    <Compile Include="PageObjects\AuditDetailsPage\AuditDetailsPage.cs" />
+    <Compile Include="PageObjects\BillingPage\BillingCustomPage.cs" />
+    <Compile Include="PageObjects\BillingPage\BillingMonthlyPage.cs" />
+    <Compile Include="PageObjects\BillingSummaryPage\BillingSummaryPage.cs" />
+    <Compile Include="PageObjects\ClientDetailspage\ClientDetailsPage.cs" />
+    <Compile Include="PageObjects\DormantClientReportPage\DormantClientReportPage.cs" />
+    <Compile Include="PageObjects\EnrollmentsPage\EnrollmentsPage.cs" />
+    <Compile Include="PageObjects\EvaluationsPage\EvaluationsIndividualResponsesPage.cs" />
+    <Compile Include="PageObjects\EvaluationsPage\EvaluationsSurveyDetailsPage.cs" />
+    <Compile Include="PageObjects\EvaluationsPage\EvaluationsSurveyGraphPage.cs" />
+    <Compile Include="PageObjects\ExamCountPage\ExamCountMonthlyPage.cs" />
+    <Compile Include="PageObjects\ExamCountPage\ExamCountViewDetailsPages.cs" />
+    <Compile Include="PageObjects\ExamHistoryPage\ExamHistoryPage.cs" />
+    <Compile Include="PageObjects\ExamiGoTimestampPage\ExamiGoTimestampPage.cs" />
+    <Compile Include="PageObjects\ExamSnapshotPage\ExamSnapshotPage.cs" />
+    <Compile Include="PageObjects\ExamStatusCountPage\ExamStatusCountPage.cs" />
+    <Compile Include="PageObjects\ExamSummaryPage\ExamSummaryCustomPage.cs" />
+    <Compile Include="PageObjects\ExamSummaryPage\ExamSummaryMonthlyPage.cs" />
+    <Compile Include="PageObjects\ExamTimestampPage\ExamTimestampPage.cs" />
+    <Compile Include="PageObjects\HourlyExamVolumePage\HourlyExamVolumePage.cs" />
+    <Compile Include="PageObjects\InstructorsPage\InstructorsPage.cs" />
+    <Compile Include="PageObjects\KPIPage\KPIPage.cs" />
+    <Compile Include="PageObjects\LoginPage\LoginPage.cs" />
+    <Compile Include="PageObjects\MonthlyExamCountPage\MonthlyExamCountDeatilsPage.cs" />
+    <Compile Include="PageObjects\MonthlyExamCountPage\MonthlyExamCountGraphPage.cs" />
+    <Compile Include="PageObjects\ProctorShiftsPage\ProctorShiftsCustomShiftSummaryPage.cs" />
+    <Compile Include="PageObjects\ProctorShiftsPage\ProctorShiftsDailyShiftAnalyticsPage.cs" />
+    <Compile Include="PageObjects\ProctorSummaryPage\ProctorSummaryPage.cs" />
+    <Compile Include="PageObjects\ProctorUtilizationReportPage\ProctorUtilizationReportMonthlyPage.cs" />
+    <Compile Include="PageObjects\ProctorUtilizationReportPage\ProctorUtilizationReportPage.cs" />
+    <Compile Include="PageObjects\RandomSelectionPage\ClientsRandomSelectionPage.cs" />
+    <Compile Include="PageObjects\RevenueReportPage\RevenueReportPage.cs" />
+    <Compile Include="PageObjects\RevenueYTDReportPage\RevenueCustomReportPage.cs" />
+    <Compile Include="PageObjects\RevenueYTDReportPage\RevenueYTDGraphPage.cs" />
+    <Compile Include="PageObjects\RevenueYTDReportPage\RevenueYTDReportPage.cs" />
+    <Compile Include="PageObjects\ScheduledExamsPage\ScheduledExamsCustomPage.cs" />
+    <Compile Include="PageObjects\ScheduledExamsPage\ScheduledExamsMonthlyPage.cs" />
+    <Compile Include="PageObjects\ScheduledExamsPage\ScheduledExamsViewDetailsPage.cs" />
+    <Compile Include="PageObjects\StudentsPage\StudentsPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\LoopTestClass\TotalTestClass - Copy.cs" />
+    <Compile Include="Tests\LoopTestClass\TotalTestClass.cs" />
+    <Compile Include="Tests\TestforLoop\AccountManagerReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\AdministrationTest.cs" />
+    <Compile Include="Tests\TestforLoop\AuditDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\BillingCustomTest.cs" />
+    <Compile Include="Tests\TestforLoop\BillingMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\BillingSummaryTest.cs" />
+    <Compile Include="Tests\TestforLoop\ClientDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\DormantClientReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\EnrollmentsTest.cs" />
+    <Compile Include="Tests\TestforLoop\EvaluationsIndividualResponsesTest.cs" />
+    <Compile Include="Tests\TestforLoop\EvaluationsSurveyDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\EvaluationsSurveyGraphTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamCountMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamCountViewDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamHistoryTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamiGoTimestampTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamSnapshotTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamStatusCountTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamSummaryCustomTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamSummaryMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\ExamTimestampTest.cs" />
+    <Compile Include="Tests\TestforLoop\HourlyExamVolumeTest.cs" />
+    <Compile Include="Tests\TestforLoop\InstructorsTest.cs" />
+    <Compile Include="Tests\TestforLoop\KPITest.cs" />
+    <Compile Include="Tests\TestforLoop\MonthlyExamCountDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\MonthlyExamCountGraphTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorShiftsCustomShiftSummaryTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorShiftsDailyShiftAnalyticsTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorSummaryTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorUtilizationReportMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\ProctorUtilizationReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\RevenueCustomReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\RevenueReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\RevenueYTDGraphTest.cs" />
+    <Compile Include="Tests\TestforLoop\RevenueYTDReportTest.cs" />
+    <Compile Include="Tests\TestforLoop\ScheduledExamsCustomTest.cs" />
+    <Compile Include="Tests\TestforLoop\ScheduledExamsMonthlyTest.cs" />
+    <Compile Include="Tests\TestforLoop\ScheduledExamsViewDetailsTest.cs" />
+    <Compile Include="Tests\TestforLoop\StudentsTest.cs" />
+    <Compile Include="Utilities\Base.cs" />
+    <Compile Include="Utilities\BasePage.cs" />
+    <Compile Include="Utilities\ExtentService.cs" />
+    <Compile Include="Utilities\ExtentTestManager.cs" />
+    <Compile Include="Utilities\JsonReader.cs" />
+    <Compile Include="Utilities\ReportsLog.cs" />
+    <Compile Include="Utilities\TestBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="license" />
+    <None Include="packages.config" />
+    <None Include="app.config" />
+    <None Include="Utilities\TestDataFiles\AccountManagerReport-testData.json" />
+    <None Include="Utilities\TestDataFiles\Administration-testData.json" />
+    <None Include="Utilities\TestDataFiles\CustomReportsDateSelection.json" />
+    <None Include="Utilities\TestDataFiles\Enrollments-testData.json" />
+    <None Include="Utilities\TestDataFiles\Evaluations-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamCountMonthly-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamCountViewDetails-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamHistory-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamiGoTimestamp-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamSnapshot-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamSummaryCustom-testData.json" />
+    <None Include="Utilities\TestDataFiles\ExamSummaryMonthly-testData.json" />
+    <None Include="Utilities\TestDataFiles\HourlyExamVolume-testData.json" />
+    <None Include="Utilities\TestDataFiles\Instructors-testData.json" />
+    <None Include="Utilities\TestDataFiles\LoginCredentials-testData.json" />
+    <None Include="Utilities\TestDataFiles\MonthlyReportsDateSelection.json" />
+    <None Include="Utilities\TestDataFiles\Students-testData.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="extent-config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\HTML Extension\" />
+    <Folder Include="Utilities\Screenshots\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\NUnit3TestAdapter.4.4.2\build\net462\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.4.4.2\build\net462\NUnit3TestAdapter.props'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\NUnit.3.13.3\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit.3.13.3\build\NUnit.props'))" />
+  </Target>
+  <Import Project="..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.4.9.0\build\Selenium.WebDriver.targets')" />
+</Project>

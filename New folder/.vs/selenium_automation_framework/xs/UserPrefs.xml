@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{315BB93B-AF75-40FD-9A99-EE6247548A16}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.selenium__automation__framework PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="selenium_automation_framework/utils/Base.cs">
+    <Files>
+      <File FileName="selenium_automation_framework/utils/Base.cs" Line="53" Column="1" />
+      <File FileName="selenium_automation_framework/SeleniumFirst.cs" Line="8" Column="38" />
+      <File FileName="selenium_automation_framework/app.config" Line="6" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="selenium_automation_framework" expanded="True">
+            <Node name="selenium_automation_framework" expanded="True">
+              <Node name="Tests" expanded="True" />
+              <Node name="utils" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="selenium_automation_framework" expanded="True">
+            <Node name="selenium_automation_framework" expanded="True">
+              <Node name="selenium_automation_framework" expanded="True">
+                <Node name="SeleniumFirst" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

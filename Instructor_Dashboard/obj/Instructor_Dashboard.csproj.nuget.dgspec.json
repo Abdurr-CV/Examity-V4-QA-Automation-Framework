@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\selenium_automation_framework\\selenium_automation_framework\\Instructor_Dashboard\\Instructor_Dashboard.csproj": {}
+  },
+  "projects": {
+    "C:\\selenium_automation_framework\\selenium_automation_framework\\Instructor_Dashboard\\Instructor_Dashboard.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\selenium_automation_framework\\selenium_automation_framework\\Instructor_Dashboard\\Instructor_Dashboard.csproj",
+        "projectName": "Instructor_Dashboard",
+        "projectPath": "C:\\selenium_automation_framework\\selenium_automation_framework\\Instructor_Dashboard\\Instructor_Dashboard.csproj",
+        "packagesPath": "C:\\Users\\AbdurRahman\\.nuget\\packages\\",
+        "outputPath": "C:\\selenium_automation_framework\\selenium_automation_framework\\Instructor_Dashboard\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\AbdurRahman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

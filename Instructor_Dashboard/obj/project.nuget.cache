@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "NUicVaJ21SKE1ZFZl3cPde6Tp2/GVy2EMQiXIOOyMj0DV/5g06oRWhn1/mFHt2LbIIm1KT6rbbLUxQO28BYZUQ==",
+  "success": true,
+  "projectFilePath": "C:\\selenium_automation_framework\\selenium_automation_framework\\Instructor_Dashboard\\Instructor_Dashboard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AbdurRahman\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
+    "C:\\Users\\AbdurRahman\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
+    "C:\\Users\\AbdurRahman\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\AbdurRahman\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}
